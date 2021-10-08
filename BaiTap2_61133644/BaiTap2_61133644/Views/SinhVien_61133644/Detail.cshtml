@@ -1,0 +1,30 @@
+﻿@model BaiTap2_61133644.Models.sinhvien
+@{
+    ViewBag.Title = "Detail";
+    Layout = null;
+}
+
+<h2>THÔNG TIN SINH VIÊN</h2>
+@{ Html.BeginForm("Index1", "sinhvien_61133644");}
+
+<div>
+    Mã sinh viên:
+</div>
+<div>
+    @Html.EditorFor(model => model.Id)
+</div>
+<div>
+  Họ và Tên:
+</div>
+<div>
+    @Html.EditorFor(model => model.Name)
+</div>
+<div>
+    Điểm: 
+</div>
+<div>
+    @Html.EditorFor(model => model.Marks)
+</div>
+<div>
+    <br/> <input type="submit" value="Đăng ký" / >
+</div>
