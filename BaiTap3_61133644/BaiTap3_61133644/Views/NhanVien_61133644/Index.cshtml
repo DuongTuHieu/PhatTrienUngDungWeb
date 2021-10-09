@@ -1,0 +1,59 @@
+﻿@model BaiTap3_61133644.Models.EmpModel
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<h4> <B>THÔNG TIN THÀNH VIÊN ĐĂNG KÝ</B></h4>
+
+@{Html.BeginForm("Confirm", "NhanVien_61133644");}
+
+
+<form name="f1" action="/NhanVien_61133644/Index" method="post" enctype="multipart/form-data">
+
+    <div>
+        Mã nhân viên: 
+    </div>
+    <div>
+        <input type="text" name="EmpID" />
+    </div>
+    <div>
+        Họ và Tên:
+    </div>
+    <div>
+        <input type="text" name="Name" />
+    </div>
+    <div>
+        Ngày sinh:
+    </div>
+    <div>
+        <input type="text" name="BirthOfDate" />
+    </div>
+    <div>
+        Email:
+    </div>
+    <div>
+        <input type="text" name=" Email" />
+    </div>
+    <div>
+        Mật khẩu:
+    </div>
+    <div>
+        <input type="password" name="Password " />
+    </div>
+    <div>
+        Đơn vị:
+    </div>
+    <div>
+        <input type="text" name="Department" />
+    </div>
+    <div>
+
+        Ảnh đại diện     <input type="file" name="Avatar" value="chọn tệp" accept="image" />
+
+    </div>
+
+    <div>
+        <br /> <input type="submit" value="Đăng ký" />
+    </div>
+    

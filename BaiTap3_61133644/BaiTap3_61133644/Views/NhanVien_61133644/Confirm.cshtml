@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<table border="1" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <table cellpadding="2" cellspacing="5">
+                <caption><b>THÔNG TIN THÀNH VIÊN ĐÃ ĐĂNG KÝ</b></caption>
+                <tr>
+                    <td rowspan="6"> <img src="@ViewBag.Avatar width="100" height="100"></td>
+                    <td>Mã nhân viên:</td>
+                    <td>@ViewBag.EmpID</td>
+                </tr>
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td>@ViewBag.Name</td>
+                </tr>
+                <tr>
+                    <td>Ngày Sinh:</td>
+                    <td>@ViewBag.BirthOfDate</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>@ViewBag.Email</td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td>@ViewBag.Password</td>
+                </tr>
+                <tr>
+                    <td>Phòng ban:</td>
+                    <td>@ViewBag.Department</td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+</table>
+
