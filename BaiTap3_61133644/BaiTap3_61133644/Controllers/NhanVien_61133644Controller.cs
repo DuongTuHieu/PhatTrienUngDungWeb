@@ -26,7 +26,7 @@ namespace BaiTap3_61133644.Controllers
             string fSave = Server.MapPath("/emp.txt");
             string[] emInfo =
            {emp.EmpID, emp.Name, emp.BirthOfDate.ToShortDateString(),
- emp.Email,emp.Password,emp.Department, postedFileName};
+            emp.Email,emp.Password,emp.Department, postedFileName};
             //Lưu các thông ti vào tập tin emp.txt
             System.IO.File.WriteAllLines(fSave, emInfo);
             //Ghi nhận các thông tin đăng ký để hiện thị trên View Confirm
